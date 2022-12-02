@@ -1,0 +1,304 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct  1 11:03:05 2022
+# Process ID: 300
+# Current directory: E:/FPGA/cube1/cube1.runs/HDMI_FPGA_ML_0_synth_1
+# Command line: vivado.exe -log HDMI_FPGA_ML_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_FPGA_ML_0.tcl
+# Log file: E:/FPGA/cube1/cube1.runs/HDMI_FPGA_ML_0_synth_1/HDMI_FPGA_ML_0.vds
+# Journal file: E:/FPGA/cube1/cube1.runs/HDMI_FPGA_ML_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDMI_FPGA_ML_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Xilinx/ip-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado20.1/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:hdmi_disp:1.0'. The one found in IP location 'e:/Xilinx/ip-library/HDMIµÄIP/rgb2dvi_v1_2' will take precedence over the same IP in location e:/Xilinx/ip-library/rgb2dvi_v1_2
+Command: synth_design -top HDMI_FPGA_ML_0 -part xc7z020clg400-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6216
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1108.496 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HDMI_FPGA_ML_0' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/synth/HDMI_FPGA_ML_0.vhd:77]
+INFO: [Synth 8-3491] module 'HDMI_FPGA_ML' declared at 'e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/hdmi_tx.vhd:67' bound to instance 'U0' of component 'HDMI_FPGA_ML' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/synth/HDMI_FPGA_ML_0.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'HDMI_FPGA_ML' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/hdmi_tx.vhd:96]
+	Parameter FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-3491] module 'DVITransmitter' declared at 'e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:65' bound to instance 'Inst_DVITransmitter' of component 'DVITransmitter' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/hdmi_tx.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'DVITransmitter' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:87]
+	Parameter FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-3491] module 'TMDSEncoder' declared at 'e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/TMDSEncoder.vhd:60' bound to instance 'Inst_TMDSEncoder_red' of component 'TMDSEncoder' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'TMDSEncoder' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/TMDSEncoder.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'TMDSEncoder' (1#1) [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/TMDSEncoder.vhd:70]
+INFO: [Synth 8-3491] module 'TMDSEncoder' declared at 'e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/TMDSEncoder.vhd:60' bound to instance 'Inst_TMDSEncoder_green' of component 'TMDSEncoder' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:275]
+INFO: [Synth 8-3491] module 'TMDSEncoder' declared at 'e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/TMDSEncoder.vhd:60' bound to instance 'Inst_TMDSEncoder_blue' of component 'TMDSEncoder' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:284]
+	Parameter N bound to: 10 - type: integer 
+	Parameter FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-3491] module 'SerializerN_1' declared at 'e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/SerializerN_1.vhd:63' bound to instance 'Inst_clk_serializer_10_1' of component 'SerializerN_1' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:300]
+INFO: [Synth 8-638] synthesizing module 'SerializerN_1' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/SerializerN_1.vhd:76]
+	Parameter N bound to: 10 - type: integer 
+	Parameter FAMILY bound to: artix7 - type: string 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'io_datax_out' to cell 'OBUFDS' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/SerializerN_1.vhd:89]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'oserdese2_master' to cell 'OSERDESE2' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/SerializerN_1.vhd:223]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'oserdese2_slave' to cell 'OSERDESE2' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/SerializerN_1.vhd:260]
+INFO: [Synth 8-256] done synthesizing module 'SerializerN_1' (2#1) [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/SerializerN_1.vhd:76]
+	Parameter N bound to: 10 - type: integer 
+	Parameter FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-3491] module 'SerializerN_1' declared at 'e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/SerializerN_1.vhd:63' bound to instance 'Inst_d2_serializer_10_1' of component 'SerializerN_1' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:311]
+	Parameter N bound to: 10 - type: integer 
+	Parameter FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-3491] module 'SerializerN_1' declared at 'e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/SerializerN_1.vhd:63' bound to instance 'Inst_d1_serializer_10_1' of component 'SerializerN_1' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:322]
+	Parameter N bound to: 10 - type: integer 
+	Parameter FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-3491] module 'SerializerN_1' declared at 'e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/SerializerN_1.vhd:63' bound to instance 'Inst_d0_serializer_10_1' of component 'SerializerN_1' [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:333]
+INFO: [Synth 8-256] done synthesizing module 'DVITransmitter' (3#1) [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/DVITransmitter.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'HDMI_FPGA_ML' (4#1) [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/src/hdmi_tx.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'HDMI_FPGA_ML_0' (5#1) [e:/FPGA/cube1/cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/synth/HDMI_FPGA_ML_0.vhd:77]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1108.496 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1108.496 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1108.496 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1108.496 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input    5 Bit       Adders := 6     
+	   2 Input    5 Bit       Adders := 6     
+	   3 Input    5 Bit       Adders := 9     
+	   4 Input    5 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 12    
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   4 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1141.781 ; gain = 33.285
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1142.621 ; gain = 34.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1142.859 ; gain = 34.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.859 ; gain = 34.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.859 ; gain = 34.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.859 ; gain = 34.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.859 ; gain = 34.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.859 ; gain = 34.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.859 ; gain = 34.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |LUT1      |     1|
+|2     |LUT2      |     9|
+|3     |LUT3      |    40|
+|4     |LUT4      |    28|
+|5     |LUT5      |    44|
+|6     |LUT6      |    82|
+|7     |OSERDESE2 |     8|
+|8     |FDPE      |     1|
+|9     |FDRE      |   114|
+|10    |FDSE      |    15|
+|11    |OBUFDS    |     4|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------+------+
+|      |Instance                       |Module          |Cells |
++------+-------------------------------+----------------+------+
+|1     |top                            |                |   346|
+|2     |  U0                           |HDMI_FPGA_ML    |   346|
+|3     |    Inst_DVITransmitter        |DVITransmitter  |   346|
+|4     |      Inst_TMDSEncoder_blue    |TMDSEncoder     |   112|
+|5     |      Inst_TMDSEncoder_green   |TMDSEncoder_0   |   110|
+|6     |      Inst_TMDSEncoder_red     |TMDSEncoder_1   |   110|
+|7     |      Inst_clk_serializer_10_1 |SerializerN_1   |     5|
+|8     |      Inst_d0_serializer_10_1  |SerializerN_1_2 |     3|
+|9     |      Inst_d1_serializer_10_1  |SerializerN_1_3 |     3|
+|10    |      Inst_d2_serializer_10_1  |SerializerN_1_4 |     3|
++------+-------------------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.859 ; gain = 34.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.859 ; gain = 34.363
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.859 ; gain = 34.363
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1154.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1214.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1214.461 ; gain = 105.965
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA/cube1/cube1.runs/HDMI_FPGA_ML_0_synth_1/HDMI_FPGA_ML_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1626.641 ; gain = 412.180
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP HDMI_FPGA_ML_0, cache-ID = c148275721a7bbdd
+INFO: [Coretcl 2-1174] Renamed 9 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA/cube1/cube1.runs/HDMI_FPGA_ML_0_synth_1/HDMI_FPGA_ML_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HDMI_FPGA_ML_0_utilization_synth.rpt -pb HDMI_FPGA_ML_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  1 11:03:40 2022...

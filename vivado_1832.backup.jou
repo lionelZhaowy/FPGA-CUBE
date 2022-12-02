@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov  8 16:40:08 2022
+# Process ID: 1832
+# Current directory: E:/Xilinx/Vivado2020_project/cube1.1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10676 E:\Xilinx\Vivado2020_project\cube1.1\cube1.xpr
+# Log file: E:/Xilinx/Vivado2020_project/cube1.1/vivado.log
+# Journal file: E:/Xilinx/Vivado2020_project/cube1.1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Xilinx/Vivado2020_project/cube1.1/cube1.xpr
+update_compile_order -fileset sources_1

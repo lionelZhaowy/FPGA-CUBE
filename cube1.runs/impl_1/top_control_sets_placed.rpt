@@ -1,0 +1,106 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Nov  7 18:20:10 2022
+| Host         : LionelZhao running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    73 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    28 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |    11 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              98 |           38 |
+| No           | No                    | Yes                    |             211 |           87 |
+| No           | Yes                   | No                     |              96 |           51 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             119 |          107 |
+| Yes          | Yes                   | No                     |              11 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+--------------+
+|       Clock Signal       |                               Enable Signal                              |                                Set/Reset Signal                               | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------+--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  H_D/u_clk/inst/clk_out1 |                                                                          | H_D/u_HDMI/U0/Inst_DVITransmitter/Inst_clk_serializer_10_1/RST_I              |                1 |              1 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[151]_i_1_n_0 | C_C/k5/rst_n                                                                  |                3 |              5 |         1.67 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[58]_i_1_n_0  | C_C/k5/rst_n                                                                  |                4 |              5 |         1.25 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[157]_i_1_n_0 | C_C/k5/rst_n                                                                  |                4 |              5 |         1.25 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[85]_i_1_n_0  | C_C/k5/rst_n                                                                  |                4 |              5 |         1.25 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[91]_i_1_n_0  | C_C/k5/rst_n                                                                  |                4 |              5 |         1.25 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[124]_i_1_n_0 | C_C/k5/rst_n                                                                  |                4 |              5 |         1.25 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[118]_i_1_n_0 | C_C/k5/rst_n                                                                  |                2 |              5 |         2.50 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[145]_i_1_n_0 | C_C/k5/rst_n                                                                  |                4 |              5 |         1.25 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[31]_i_1_n_0  | C_C/k5/rst_n                                                                  |                5 |              5 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[64]_i_1_n_0  | C_C/k5/rst_n                                                                  |                5 |              5 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[112]_i_1_n_0 | C_C/k5/rst_n                                                                  |                4 |              5 |         1.25 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[142]_i_1_n_0 | C_C/k5/rst_n                                                                  |                8 |              8 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[115]_i_1_n_0 | C_C/k5/rst_n                                                                  |                8 |              8 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[55]_i_1_n_0  | C_C/k5/rst_n                                                                  |                8 |              8 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[109]_i_1_n_0 | C_C/k5/rst_n                                                                  |                8 |              8 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[136]_i_1_n_0 | C_C/k5/rst_n                                                                  |                8 |              8 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[154]_i_1_n_0 | C_C/k5/rst_n                                                                  |                8 |              8 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[160]_i_1_n_0 | C_C/k5/rst_n                                                                  |                8 |              8 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/Cube/cube_nstate_inferred__0/cube_state[82]_i_1_n_0  | C_C/k5/rst_n                                                                  |                8 |              8 |         1.00 |
+|  H_D/u_clk/inst/clk_out1 |                                                                          | H_D/u_HDMI/U0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/q_out_d[9]_i_1__0_n_0 |                4 |             10 |         2.50 |
+|  H_D/u_clk/inst/clk_out1 |                                                                          | H_D/u_hdmi_data_gen/x_cnt[11]_i_1_n_0                                         |                3 |             11 |         3.67 |
+|  H_D/u_clk/inst/clk_out1 | H_D/u_hdmi_data_gen/y_cnt[11]_i_2_n_0                                    | H_D/u_hdmi_data_gen/y_cnt[11]_i_1_n_0                                         |                3 |             11 |         3.67 |
+|  H_D/u_clk/inst/clk_out1 |                                                                          | H_D/u_hdmi_data_gen/cur_x[10]_i_1_n_0                                         |               17 |             21 |         1.24 |
+|  H_D/u_clk/inst/clk_out1 |                                                                          | H_D/u_hdmi_data_gen/cur_y[10]_i_1_n_0                                         |               13 |             22 |         1.69 |
+|  H_D/u_clk/inst/clk_out1 |                                                                          | H_D/u_HDMI/U0/Inst_DVITransmitter/Inst_TMDSEncoder_red/SR[0]                  |               14 |             32 |         2.29 |
+|  H_D/u_clk/inst/clk_out1 |                                                                          |                                                                               |               38 |             98 |         2.58 |
+|  H_D/u_clk/inst/clk_out1 |                                                                          | C_C/k5/rst_n                                                                  |               86 |            210 |         2.44 |
++--------------------------+--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,5 @@
+TMDSEncoder.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/TMDSEncoder.vhd,
+SerializerN_1.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/SerializerN_1.vhd,
+DVITransmitter.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/DVITransmitter.vhd,
+hdmi_tx.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/hdmi_tx.vhd,
+HDMI_FPGA_ML_0.vhd,vhdl,xil_defaultlib,../../../../cube1.gen/sources_1/ip/HDMI_FPGA_ML_0/sim/HDMI_FPGA_ML_0.vhd,

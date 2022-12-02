@@ -1,0 +1,80 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Nov  7 18:21:46 2022
+| Host         : LionelZhao running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 9
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 9          |
++-----------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -5.540 ns between H_D/u_hdmi_data_gen/cur_x_reg[6]/C (clocked by clk_out1_clk_wiz_0) and H_D/u_hdmi_data_gen/O_blue_reg[7]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -5.543 ns between H_D/u_hdmi_data_gen/cur_x_reg[6]/C (clocked by clk_out1_clk_wiz_0) and H_D/u_hdmi_data_gen/O_blue_reg[6]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -5.585 ns between H_D/u_hdmi_data_gen/cur_x_reg[6]/C (clocked by clk_out1_clk_wiz_0) and H_D/u_hdmi_data_gen/O_green_reg[7]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -5.681 ns between H_D/u_hdmi_data_gen/cur_x_reg[6]/C (clocked by clk_out1_clk_wiz_0) and H_D/u_hdmi_data_gen/O_red_reg[7]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -5.686 ns between H_D/u_hdmi_data_gen/cur_x_reg[6]/C (clocked by clk_out1_clk_wiz_0) and H_D/u_hdmi_data_gen/O_red_reg[6]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -5.687 ns between H_D/u_hdmi_data_gen/cur_x_reg[6]/C (clocked by clk_out1_clk_wiz_0) and H_D/u_hdmi_data_gen/O_green_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -5.689 ns between H_D/u_hdmi_data_gen/cur_x_reg[6]/C (clocked by clk_out1_clk_wiz_0) and H_D/u_hdmi_data_gen/O_green_reg[4]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -5.690 ns between H_D/u_hdmi_data_gen/cur_x_reg[6]/C (clocked by clk_out1_clk_wiz_0) and H_D/u_hdmi_data_gen/O_green_reg[5]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -5.690 ns between H_D/u_hdmi_data_gen/cur_x_reg[6]/C (clocked by clk_out1_clk_wiz_0) and H_D/u_hdmi_data_gen/O_green_reg[6]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+
